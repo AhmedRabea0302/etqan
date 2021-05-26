@@ -692,15 +692,15 @@
         }
 
         // Open All 
-        let openAll = document.querySelector('.open-all');
-        let treeTable = document.querySelector('#tree-table'); 
-        openAll.addEventListener('click', function(e) {
-            let rows = treeTable.querySelectorAll('tr');
-            rows.forEach(r => {
-                r.show();
-            });
-            console.log('ROWS: ', rows);
-        });
+        // let openAll = document.querySelector('.open-all');
+        // let treeTable = document.querySelector('#tree-table'); 
+        // openAll.addEventListener('click', function(e) {
+        //     let rows = treeTable.querySelectorAll('tr');
+        //     rows.forEach(r => {
+        //         r.show();
+        //     });
+        //     console.log('ROWS: ', rows);
+        // });
 
 
     </script>

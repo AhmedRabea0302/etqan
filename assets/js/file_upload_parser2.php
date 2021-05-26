@@ -5,10 +5,6 @@
     $fileType = $_FILES["file2"]["type"]; // The type of file it is
     $fileSize = $_FILES["file2"]["size"]; // File size in bytes
     $fileErrorMsg = $_FILES["file2"]["error"]; // 0 for false... and 1 for true
-<<<<<<< HEAD
-    print_r($fileTmpLoc);
-=======
->>>>>>> 6026a68dd1a9b4b9fa2bca37e8d15d2ee04c4afa
 
     if (!$fileTmpLoc) { // if file not chosen
         echo "ERROR: Please browse for a file before clicking the upload button.";

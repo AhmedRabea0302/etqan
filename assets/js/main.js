@@ -66,14 +66,8 @@ $(document).ready(function () {
     function uploadFile() {
         
         var file = get_elment("file1").files[0],
-<<<<<<< HEAD
-        formdata = new FormData(),
-        ajax = new XMLHttpRequest();
-        console.log('Video: ', file);
-=======
             formdata = new FormData(),
             ajax = new XMLHttpRequest();
->>>>>>> 6026a68dd1a9b4b9fa2bca37e8d15d2ee04c4afa
         formdata.append("file1", file);
 	    
         ajax.upload.addEventListener("progress", progressHandler, false);
@@ -91,10 +85,7 @@ $(document).ready(function () {
         get_elment("loaded_n_total2").innerHTML = "<span class='total-upload'>Uploaded  "  + event.loaded + " bytes of " + event.total+"</span>";
         var percent = (event.loaded / event.total) * 100;
         var rounPercent = get_elment("progressBar2").value = Math.round(percent);
-<<<<<<< HEAD
-=======
         console.log('ROUNDED PERCENT: ', rounPercent);
->>>>>>> 6026a68dd1a9b4b9fa2bca37e8d15d2ee04c4afa
         get_elment("progressBar2").style.width = rounPercent + '%';
         get_elment("progressBar2").innerHTML = rounPercent + '%';
         get_elment("status2").innerHTML = Math.round(percent) + "% uploaded...";
@@ -119,11 +110,7 @@ $(document).ready(function () {
             formdata = new FormData(),
             ajax = new XMLHttpRequest();
         formdata.append("file2", file);
-<<<<<<< HEAD
-
-=======
 	    
->>>>>>> 6026a68dd1a9b4b9fa2bca37e8d15d2ee04c4afa
         ajax.upload.addEventListener("progress", progressHandlerBook, false);
         ajax.addEventListener("load", completeHandlerBook, false);
         ajax.addEventListener("error", errorHandlerBook, false);
