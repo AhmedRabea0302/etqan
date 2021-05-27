@@ -286,7 +286,7 @@
 
                 $.ajax({
                     type: "GET",
-                    url: '/suspicion/' + $id, // This is what I have updated
+                    url: '{{url('/suspicion/')}}' + '/' + $id, // This is what I have updated
                 }).done(function( data ) {
                     let suspicion = data;
 

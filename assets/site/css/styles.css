@@ -162,6 +162,11 @@ body {
     margin-left: 5px;
 }
 
+.navbar-default .social-links ul {
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+}
+
 .navbar-default .social-links li {
     border: none;
 }

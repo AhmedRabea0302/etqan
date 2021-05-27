@@ -34,10 +34,10 @@
         <ul class="nav navbar-nav navbar-right" style="display: flex">
             <div class="social-links">
                 <ul class="list-unstyled"  style="display: flex; margin-top:15px"> 
-                    <li><a href="" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                    <li><a href="https://www.facebook.com/nusrah.alsunnah" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/nusrahalsunnah/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
                 </ul>
             </div>
             @if(auth()->guard('auth-site')->check() || auth()->guard('auth-site-sheikh')->check()) 
