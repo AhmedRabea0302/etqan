@@ -13,8 +13,10 @@
                 <div class="col-md-4 right-box">
                     <table id="tree-table" class="table">
                         <tbody>
-                            <input type="text" name="" id="searchTree" class="form-control" placeholder="إبحث في الشجرة">
-                            @if(!count($evidences))
+                            <div style="display: flex">
+                                <input type="text" name="" id="searchTree" class="form-control" placeholder="إبحث في الشجرة">
+                                <i class="fa fa-search"></i>
+                            </div>                            @if(!count($evidences))
                                 <p class="lead text-center">لا توجد أدلة</p>
                             @endif
                             @foreach($evidences as $evidence)

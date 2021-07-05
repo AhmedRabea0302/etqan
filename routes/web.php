@@ -31,6 +31,7 @@ Route::group(['namespace' => 'Site'], function() {
     Route::get('/suspicions', 'HomeController@index')->name('site-home'); 
     Route::get('/suspicion/{id}', 'HomeController@getSuspicionContent')->name('suspicion-site-content');
     Route::get('/suspicion-comments/{id}', 'HomeController@getSuspicionComments')->name('get-suspicion-comments');
+    Route::get('/download-video', 'HomeController@downloadVideo')->name('download-video');
 
     Route::group(['middleware' => 'auth-site'], function() {
         Route::post('/suspicion-add-comment', 'HomeController@addCommnet')->name('stie-add-comment');

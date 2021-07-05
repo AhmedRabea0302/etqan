@@ -17,6 +17,7 @@ use DB;
 
 
 use Carbon\Carbon;
+use Storage;
 
 class HomeController extends Controller
 {
@@ -219,6 +220,13 @@ class HomeController extends Controller
         // dd($suspicionComments);
         return view('site.pages.suspicions.suspicion-content-share')->
         with(['suspicion' => $suspicion, 'suspicionComments' => $suspicionComments, 'book_name' => $book_name]);
+    }
+
+    public function downloadVideo() {
+        $headers = [
+            'Content-Type' => 'application/mp4'
+        ];
+        return Storage::download(url('/storage/uploads/videos/suspicions/1625460602.mp4'), 'Hom');
     }
 
     // Contact Us Page

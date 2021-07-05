@@ -15,7 +15,10 @@
                     <table id="tree-table" class="table">
                         <tbody>
                             {{-- <i class="fa fa-plus open-all" style="cursor: pointer"></i> <mark>فتح الجميع</mark> --}}
-                            <input type="text" name="" id="searchTree" class="form-control" placeholder="إبحث في الشجرة">
+                            <div style="display: flex">
+                                <input type="text" name="" id="searchTree" class="form-control" placeholder="إبحث في الشجرة">
+                                <i class="fa fa-search"></i>
+                            </div>
                             @if(!count($suspicions))
                                 <p class="lead text-center">لا توجد شبهات</p>
                             @endif
@@ -137,6 +140,10 @@
                 
                 <div id="video-parent" class="modal-body  box-item-content">
                 
+                </div>
+
+                <div class="modal-footer">
+                    <a href="{{ route('download-video') }}" target="_blank"><i class="fa fa-download"></i> تحميل الفيديو</a>
                 </div>
             </div>
 

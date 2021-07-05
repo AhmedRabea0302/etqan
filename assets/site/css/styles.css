@@ -47,10 +47,6 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    max-width: 1070px;
-}
-
 /* ******** SCROLL BARS ******* */
 .modal::-webkit-scrollbar,
 .right-box::-webkit-scrollbar,
@@ -322,7 +318,19 @@ body {
 
 .main .right-box #searchTree {
     margin-bottom: 15px;
-    border: 2px solid #dbaf37;
+    border: 2px solid #a48020;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+
+.main .right-box .fa.fa-search {
+    padding: 10px;
+    background: #a48020;
+    margin-bottom: 15px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #fff;
 }
 
 .main .right-box table tbody tr td {
