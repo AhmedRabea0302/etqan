@@ -226,7 +226,12 @@ class HomeController extends Controller
         $headers = [
             'Content-Type' => 'application/mp4'
         ];
-        return Storage::download(url('/storage/uploads/videos/suspicions/1625460602.mp4'), 'Hom');
+        $url = Storage::url('uploads/videos/suspicions/1625460602.mp4', 'Hom');
+        try {
+            return response()->download(url($url));
+        } catch (Exception $e) {   
+            return '';
+        }
     }
 
     // Contact Us Page
